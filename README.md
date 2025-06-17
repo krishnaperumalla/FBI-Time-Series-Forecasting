@@ -1,6 +1,6 @@
 FBI Time Series Forecasting
 Project Overview
-This project focuses on forecasting monthly crime trends using a historical dataset of crime incidents provided by the FBI. The dataset includes detailed records of crime incidents with attributes such as crime type, location (neighborhood, coordinates), and temporal information (year, month, day, hour, minute). The primary goal is to predict future monthly crime occurrences by crime type, leveraging time series analysis to provide actionable insights for public safety strategies and crime prevention.
+This project focuses on forecasting monthly crime trends using a historical dataset of crime incidents provided by the FBI. The dataset includes detailed records with attributes such as crime type, location (neighborhood, coordinates), and temporal information (year, month, day, hour, minute). The primary goal is to predict future monthly crime occurrences by crime type, leveraging time series analysis to provide actionable insights for public safety strategies and crime prevention.
 The project employs data preprocessing, exploratory data analysis (EDA), and the SARIMA model to capture long-term trends and short-term fluctuations in crime data. The final model achieves a high accuracy of 81.57% with low forecast error metrics (MAE and RMSE), demonstrating its effectiveness for real-world applications.
 Table of Contents
 
@@ -18,7 +18,7 @@ Contact
 Acknowledgments
 
 Problem Statement
-The objective is to forecast monthly crime trends using a historical dataset of crime incidents. The dataset contains challenges such as missing values, duplicate entries, and geographical inconsistencies. The project aims to:
+The objective is to forecast monthly crime trends using a historical dataset of crime incidents. The dataset presents challenges such as missing values, duplicate entries, and geographical inconsistencies. The project aims to:
 
 Analyze long-term crime trends and short-term variations.
 Develop a robust time series forecasting model (SARIMA) to predict future crime occurrences.
@@ -40,10 +40,16 @@ Key Statistics:
 
 Rows: 474,565
 Columns: 13
-Missing Values: Notable in NEIGHBOURHOOD (51,491), HOUR (49,365), MINUTE (49,365), and HUNDRED_BLOCK (13).
-Duplicates: 44,618 rows.
+Missing Values:
+NEIGHBOURHOOD: 51,491
+HOUR: 49,365
+MINUTE: 49,365
+HUNDRED_BLOCK: 13
 
-The data was aggregated by year, month, and crime type to create a time series for forecasting.
+
+Duplicates: 44,618 rows
+
+The data was aggregated by year, month, and crime type to create a monthly time series for forecasting.
 Installation
 To run this project locally, follow these steps:
 
@@ -90,7 +96,7 @@ Generate forecasts and evaluate model performance.
 
 View the visualizations (e.g., actual vs. forecasted crime counts) and performance metrics (MAE, RMSE, MAPE).
 
-The notebook is self-contained and includes comments for each step. Modify parameters (e.g., SARIMA order, forecast horizon) as needed for experimentation.
+The notebook is self-contained with detailed comments for each step. Modify parameters (e.g., SARIMA order, forecast horizon) as needed for experimentation.
 Methodology
 
 Data Preprocessing:
@@ -103,14 +109,14 @@ Aggregated data by year, month, and crime type to create a monthly time series.
 
 Exploratory Data Analysis (EDA):
 
-Visualized crime trends over time, revealing a long-term decline with short-term fluctuations.
+Visualized crime trends, revealing a long-term decline with short-term fluctuations.
 Analyzed seasonality and stationarity using ACF/PACF plots and the Augmented Dickey-Fuller (ADF) test.
 Confirmed persistent patterns in newer data, validating the dataset's forecasting potential.
 
 
 Modeling:
 
-Selected the SARIMA model for its ability to capture both trend and seasonality.
+Selected the SARIMA model for its ability to capture trend and seasonality.
 Split data into training and test sets.
 Trained the SARIMA model and tuned parameters for optimal performance.
 Generated forecasts for future months.
@@ -163,19 +169,20 @@ Contributing
 Contributions are welcome! To contribute:
 
 Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes and commit (git commit -m "Add feature").
-Push to the branch (git push origin feature-branch).
+Create a new branch:git checkout -b feature-branch
+
+
+Make your changes and commit:git commit -m "Add feature"
+
+
+Push to the branch:git push origin feature-branch
+
+
 Open a pull request with a detailed description of your changes.
 
 Please ensure your code follows the project's coding style and includes appropriate documentation.
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-Contact
-For questions or feedback, please contact:
-
-Your Name: your.email@example.com
-GitHub: your-username
 
 Acknowledgments
 
