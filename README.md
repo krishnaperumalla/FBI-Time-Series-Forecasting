@@ -50,12 +50,11 @@ The objective is to forecast monthly crime trends using historical FBI crime inc
    ```bash
    git clone https://github.com/your-username/fbi-time-series-forecasting.git
    cd fbi-time-series-forecasting
-   ```
-
+   
 2. **Install Dependencies**:
    ```bash
    pip install numpy pandas matplotlib seaborn scipy sklearn statsmodels
-   ```
+   
 
 3. **Download Dataset**:
    - Place `Train.xlsx` in the project directory.
@@ -99,7 +98,7 @@ The objective is to forecast monthly crime trends using historical FBI crime inc
 1. **Run the Notebook**:
    ```bash
    jupyter notebook FBI_TIME_SERIES_FORECASTING.ipynb
-   ```
+   
 
 2. **Key Steps in Notebook**:
    - Load and preprocess the dataset.
