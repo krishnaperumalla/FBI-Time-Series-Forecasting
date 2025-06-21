@@ -1,5 +1,5 @@
 # FBI Time Series Forecasting
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/krishnaperumalla/FBI-Time-Series-Forecasting)
+
 
 ## 📌 Project Overview
 This project focuses on analyzing and forecasting monthly crime trends using a historical dataset of FBI crime incidents. The dataset includes attributes such as crime type, location, and temporal data spanning from 1999 to 2011. The primary objective is to predict future monthly crime occurrences by leveraging time series modeling, specifically SARIMA (Seasonal AutoRegressive Integrated Moving Average).
